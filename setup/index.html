@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Install, connect, and pair PromptPager.">
+  <title>Setup — PromptPager</title>
+  <link rel="icon" href="../assets/promptpager-icon.png">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <header class="site-header"><nav class="nav" aria-label="Primary navigation"><a class="brand" href="../"><img src="../assets/promptpager-icon.png" alt="">PromptPager</a><div class="nav-links"><a href="./" aria-current="page">Setup</a><a href="../support/">Support</a><a href="../privacy/">Privacy</a></div></nav></header>
+  <main class="document">
+    <div class="eyebrow">Get started</div>
+    <h1>Set up PromptPager</h1>
+    <p class="lead">Run the bridge on your Mac, then pair it securely with PromptPager on iPhone.</p>
+
+    <h2>1. Start the bridge</h2>
+    <p>On your Mac, open Terminal and run:</p>
+    <pre><code>npx @rujitraval/promptpager --host 0.0.0.0</code></pre>
+    <p>The bridge prints a six-digit pairing code and starts a built-in demo session.</p>
+
+    <h2>2. Pair the iPhone app</h2>
+    <ol>
+      <li>Connect the iPhone and Mac to the same trusted Wi-Fi network.</li>
+      <li>Open PromptPager Settings.</li>
+      <li>Select the discovered bridge, or enter the Mac's local IP address and port <code>47900</code>.</li>
+      <li>Tap <strong>Connect</strong>, enter the six-digit code shown in Terminal, and tap <strong>Pair</strong>.</li>
+    </ol>
+
+    <h2>3. Connect Apple Watch</h2>
+    <p>Install the included PromptPager companion from the Watch app on iPhone, then open PromptPager on Apple Watch once. Questions from an active session can then appear on both devices.</p>
+
+    <h2>4. Keep it secure</h2>
+    <p>Use PromptPager only on networks you trust. Pairing exchanges the temporary code for a device credential. Do not expose the bridge directly to the public internet. Closed-app remote notifications require a user-controlled authenticated HTTPS relay.</p>
+
+    <div class="notice">Need help? Visit <a href="../support/">PromptPager Support</a>.</div>
+  </main>
+  <footer><div class="footer-inner"><p>© 2026 Rujit Raval</p><p><a href="../privacy/">Privacy</a> · <a href="../support/">Support</a></p></div></footer>
+</body>
+</html>
