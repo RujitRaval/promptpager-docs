@@ -107,6 +107,11 @@ h3 { margin: 30px 0 8px; }
 }
 
 .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+.download-note {
+  margin-top: 12px;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
 .button {
   display: inline-block;
   padding: 11px 18px;
@@ -183,4 +188,3 @@ footer {
   .grid { grid-template-columns: 1fr; }
   .footer-inner { flex-direction: column; }
 }
-
