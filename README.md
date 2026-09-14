@@ -6,4 +6,4 @@ Public documentation and support site for PromptPager.
 - [Setup guide](https://rujitraval.github.io/promptpager-docs/setup/)
 - [Support](https://rujitraval.github.io/promptpager-docs/support/)
 - [Privacy policy](https://rujitraval.github.io/promptpager-docs/privacy/)
-- [Signed PromptPager 0.3.1 Mac companion](https://github.com/RujitRaval/promptpager-docs/releases/download/v0.3.1/PromptPager-0.3.1-macOS-universal.zip)
+- [Signed PromptPager 0.4.0 for Mac](https://github.com/RujitRaval/promptpager-docs/releases/download/v0.4.0/PromptPager-0.4.0-macOS-universal.zip)
