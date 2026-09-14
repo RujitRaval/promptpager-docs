@@ -13,15 +13,15 @@
   <main class="document">
     <div class="eyebrow">Get started</div>
     <h1>Set up PromptPager</h1>
-    <p class="lead">Install the Mac companion, let it configure your coding agents, then pair securely with PromptPager on iPhone. No Node.js, npm, Homebrew, or relay setup is required.</p>
+    <p class="lead">Install PromptPager on your Mac, let it configure your coding agents, then pair securely with PromptPager on iPhone. No separate bridge, Node.js, npm, Homebrew, or relay setup is required.</p>
 
     <div class="actions">
-      <a class="button primary" href="https://github.com/RujitRaval/promptpager-docs/releases/download/v0.3.1/PromptPager-0.3.1-macOS-universal.zip">Download PromptPager 0.3.1 for Mac</a>
-      <a class="button" href="https://github.com/RujitRaval/promptpager-docs/releases/tag/v0.3.1">Release notes</a>
+      <a class="button primary" href="https://github.com/RujitRaval/promptpager-docs/releases/download/v0.4.0/PromptPager-0.4.0-macOS-universal.zip">Download PromptPager 0.4.0 for Mac</a>
+      <a class="button" href="https://github.com/RujitRaval/promptpager-docs/releases/tag/v0.4.0">Release notes</a>
     </div>
     <p class="download-note">Universal app for Apple silicon and Intel · Requires macOS 14 or later · Signed with Developer ID and notarized by Apple</p>
 
-    <h2>1. Install the Mac companion</h2>
+    <h2>1. Install PromptPager on your Mac</h2>
     <ol>
       <li>Download and open the ZIP file above.</li>
       <li>Move <strong>PromptPager.app</strong> to your Applications folder.</li>
@@ -34,18 +34,18 @@
       <li>Open the PromptPager menu-bar menu and click <strong>Set Up PromptPager</strong>.</li>
       <li>Choose the folder where you normally run coding-agent sessions if prompted.</li>
       <li>Sign in to Claude Code or Codex if PromptPager reports that authentication is required.</li>
-      <li>Keep the six-digit pairing code shown by the companion on screen.</li>
+      <li>Keep the six-digit pairing code shown by PromptPager on screen.</li>
     </ol>
-    <p>The companion installs PromptPager's Claude hooks, enables Codex support, configures secure remote notifications, and starts the bridge automatically when you sign in to your Mac. PromptPager does not receive or store your Claude or Codex credentials.</p>
+    <p>The Mac app installs PromptPager's Claude hooks, enables Codex support, configures secure remote notifications, and manages its own private runtime. It starts automatically when you sign in to your Mac and stops when you quit PromptPager. PromptPager does not receive or store your Claude or Codex credentials.</p>
 
     <h2>3. Pair the iPhone app</h2>
     <ol>
       <li>Connect the iPhone and Mac to the same trusted Wi-Fi network.</li>
       <li>Open PromptPager Settings.</li>
       <li>Select your discovered Mac. Its host and port are filled in automatically.</li>
-      <li>Tap <strong>Connect</strong>, enter the six-digit code shown by the Mac companion, and tap <strong>Pair</strong>.</li>
+      <li>Tap <strong>Connect</strong>, enter the six-digit code shown by PromptPager on the Mac, and tap <strong>Pair</strong>.</li>
     </ol>
-    <p>The Mac companion securely transfers the remote-notification configuration during pairing. Do not append another port number or enter a relay key manually.</p>
+    <p>PromptPager on the Mac securely transfers the remote-notification configuration during pairing. Do not append another port number or enter a relay key manually.</p>
 
     <h2>4. Connect Apple Watch</h2>
     <p>Install the included PromptPager companion from the Watch app on iPhone, then open PromptPager on Apple Watch once. Questions from an active session can then appear on both devices.</p>
@@ -53,11 +53,8 @@
     <h2>5. Start working</h2>
     <p>Run Claude Code or Codex normally on your Mac. PromptPager shows active sessions and forwards genuine questions that need your response. Tool authorization in Claude Code's auto mode remains controlled by Claude's own classifier.</p>
 
-    <h2>Advanced: command-line installation</h2>
-    <p>Developers who prefer a command-line installation can use Homebrew or npm. Most customers should use the Mac companion above.</p>
-    <pre><code>brew install rujitraval/tap/promptpager
-promptpager setup</code></pre>
-    <p>Alternatively, run <code>npx @rujitraval/promptpager setup</code>. Use PromptPager only on networks you trust, and never expose the local bridge directly to the public internet.</p>
+    <h2>For contributors</h2>
+    <p>The npm and Homebrew packages are compatibility tools for contributors and advanced development workflows. They are not part of customer setup. Customers should install PromptPager.app above and should never expose its local service directly to the public internet.</p>
 
     <div class="notice">Need help? Visit <a href="../support/">PromptPager Support</a>.</div>
   </main>
